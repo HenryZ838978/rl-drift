@@ -1,0 +1,234 @@
+{
+  "models": [
+    {
+      "tag": "qwen25_7b",
+      "label": "Qwen2.5-7B-Instruct",
+      "n_axes": 16,
+      "template_score": 0.1893350537006976,
+      "stripped_metrics": {
+        "cross_char5_jaccard": 0.0013636103019044668,
+        "cross_word2_jaccard": 3.3862474621992474e-05,
+        "cross_word3_jaccard": 1.4204170122421694e-05,
+        "cross_word2_cosine": 8.205488474944063e-05,
+        "same_prompt_char5": 0.10473879539562482,
+        "unique_w2_ratio": 0.8910619988265206,
+        "unique_w3_ratio": 0.9419795221843004,
+        "avg_boilerplate": 0.5777777777777777,
+        "opening_diversity": 0.9621212121212122,
+        "structural_diversity": 0.2962962962962963,
+        "avg_length": 371.9259259259259,
+        "valid_count": 132,
+        "english_ratio": 0.044779984462460905
+      }
+    },
+    {
+      "tag": "qwen2_audio",
+      "label": "Qwen2-Audio-7B",
+      "n_axes": 13,
+      "template_score": 0.21543583985126818,
+      "stripped_metrics": {
+        "cross_char5_jaccard": 0.00030934225065340677,
+        "cross_word2_jaccard": 3.793516449752575e-05,
+        "cross_word3_jaccard": 1.471787847959051e-05,
+        "cross_word2_cosine": 9.482962314917669e-05,
+        "same_prompt_char5": 0.15674791818940806,
+        "unique_w2_ratio": 0.8832116788321168,
+        "unique_w3_ratio": 0.93560751245688,
+        "avg_boilerplate": 0.4148148148148148,
+        "opening_diversity": 0.916030534351145,
+        "structural_diversity": 0.2074074074074074,
+        "avg_length": 195.74074074074073,
+        "valid_count": 131,
+        "english_ratio": 0.04581077499716049
+      }
+    },
+    {
+      "tag": "minicpm41",
+      "label": "MiniCPM4.1-8B",
+      "n_axes": 9,
+      "template_score": 0.28427973781086757,
+      "stripped_metrics": {
+        "cross_char5_jaccard": 0.001776275058863153,
+        "cross_word2_jaccard": 0.000321944290412976,
+        "cross_word3_jaccard": 7.963955169455225e-05,
+        "cross_word2_cosine": 0.005744561766736279,
+        "same_prompt_char5": 0.018461022198082606,
+        "unique_w2_ratio": 0.8407449638920562,
+        "unique_w3_ratio": 0.9027993779160186,
+        "avg_boilerplate": 0.014814814814814815,
+        "opening_diversity": 1.0,
+        "structural_diversity": 0.07407407407407407,
+        "avg_length": 149.7925925925926,
+        "valid_count": 51,
+        "english_ratio": 0.008375710439724798
+      }
+    },
+    {
+      "tag": "qwen3_8b",
+      "label": "Qwen3-8B",
+      "n_axes": 9,
+      "template_score": 0.07968318091580569,
+      "stripped_metrics": {
+        "cross_char5_jaccard": 0.00241067674647884,
+        "cross_word2_jaccard": 3.6840356331225715e-05,
+        "cross_word3_jaccard": 0.0,
+        "cross_word2_cosine": 8.002648689205053e-05,
+        "same_prompt_char5": 0.07037319493288521,
+        "unique_w2_ratio": 0.9601489757914339,
+        "unique_w3_ratio": 0.9844479004665629,
+        "avg_boilerplate": 0.37777777777777777,
+        "opening_diversity": 0.9734513274336283,
+        "structural_diversity": 0.4888888888888889,
+        "avg_length": 185.82962962962964,
+        "valid_count": 113,
+        "english_ratio": 0.03520312562293187
+      }
+    },
+    {
+      "tag": "gemma4",
+      "label": "Gemma4-E4B",
+      "n_axes": 7,
+      "template_score": 0.08668767408328062,
+      "stripped_metrics": {
+        "cross_char5_jaccard": 0.001101541446370831,
+        "cross_word2_jaccard": 0.00017114465654107416,
+        "cross_word3_jaccard": 8.525806129173762e-05,
+        "cross_word2_cosine": 0.00030398249610017104,
+        "same_prompt_char5": 0.1124856168970551,
+        "unique_w2_ratio": 0.8916923754958131,
+        "unique_w3_ratio": 0.9380590339892666,
+        "avg_boilerplate": 0.3851851851851852,
+        "opening_diversity": 0.9621212121212122,
+        "structural_diversity": 0.6370370370370371,
+        "avg_length": 581.7407407407408,
+        "valid_count": 132,
+        "english_ratio": 0.09219424597868033
+      }
+    },
+    {
+      "tag": "qwen35_9b",
+      "label": "Qwen3.5-9B",
+      "n_axes": 5,
+      "template_score": 0.7323446200826299,
+      "stripped_metrics": {
+        "cross_char5_jaccard": 0.032828434187552866,
+        "cross_word2_jaccard": 0.013052000720397892,
+        "cross_word3_jaccard": 0.004398463547995721,
+        "cross_word2_cosine": 0.026990169733502108,
+        "same_prompt_char5": 0.1918256334295571,
+        "unique_w2_ratio": 0.6409528113097928,
+        "unique_w3_ratio": 0.8122669951697086,
+        "avg_boilerplate": 0.24444444444444444,
+        "opening_diversity": 0.21481481481481482,
+        "structural_diversity": 0.4074074074074074,
+        "avg_length": 1715.4518518518519,
+        "valid_count": 135,
+        "english_ratio": 0.6188413807397684
+      }
+    },
+    {
+      "tag": "deepseek_r1",
+      "label": "DeepSeek-R1-14B",
+      "n_axes": 0,
+      "template_score": 0.3650741589530518,
+      "stripped_metrics": {
+        "cross_char5_jaccard": 0.007685894511931377,
+        "cross_word2_jaccard": 0.002560146992311653,
+        "cross_word3_jaccard": 0.002119873354195012,
+        "cross_word2_cosine": 0.003021027549362931,
+        "same_prompt_char5": 0.10814684643257028,
+        "unique_w2_ratio": 0.9045168667810177,
+        "unique_w3_ratio": 0.9496090356211989,
+        "avg_boilerplate": 2.185185185185185,
+        "opening_diversity": 0.9407407407407408,
+        "structural_diversity": 0.3111111111111111,
+        "avg_length": 689.4888888888889,
+        "valid_count": 135,
+        "english_ratio": 0.050504399394076124
+      }
+    },
+    {
+      "tag": "qwen3_14b",
+      "label": "Qwen3-14B-AWQ",
+      "n_axes": 0,
+      "template_score": 0.07659222206418487,
+      "stripped_metrics": {
+        "cross_char5_jaccard": 0.001623113647720705,
+        "cross_word2_jaccard": 8.60965523044207e-05,
+        "cross_word3_jaccard": 3.704794254681856e-05,
+        "cross_word2_cosine": 0.00016875908055349688,
+        "same_prompt_char5": 0.05828931316055843,
+        "unique_w2_ratio": 0.9517265680056378,
+        "unique_w3_ratio": 0.9769146207401979,
+        "avg_boilerplate": 0.28888888888888886,
+        "opening_diversity": 0.9908256880733946,
+        "structural_diversity": 0.48148148148148145,
+        "avg_length": 195.93333333333334,
+        "valid_count": 109,
+        "english_ratio": 0.04189827944791076
+      }
+    }
+  ],
+  "qwen_lineage": [
+    {
+      "tag": "qwen25_7b",
+      "label": "Qwen2.5-7B-Instruct",
+      "n_axes": 16,
+      "stripped": {
+        "cross_char5_jaccard": 0.0013636103019044668,
+        "cross_word2_jaccard": 3.3862474621992474e-05,
+        "cross_word3_jaccard": 1.4204170122421694e-05,
+        "cross_word2_cosine": 8.205488474944063e-05,
+        "same_prompt_char5": 0.10473879539562482,
+        "unique_w2_ratio": 0.8910619988265206,
+        "unique_w3_ratio": 0.9419795221843004,
+        "avg_boilerplate": 0.5777777777777777,
+        "opening_diversity": 0.9621212121212122,
+        "structural_diversity": 0.2962962962962963,
+        "avg_length": 371.9259259259259,
+        "valid_count": 132,
+        "english_ratio": 0.044779984462460905
+      }
+    },
+    {
+      "tag": "qwen3_8b",
+      "label": "Qwen3-8B",
+      "n_axes": 9,
+      "stripped": {
+        "cross_char5_jaccard": 0.00241067674647884,
+        "cross_word2_jaccard": 3.6840356331225715e-05,
+        "cross_word3_jaccard": 0.0,
+        "cross_word2_cosine": 8.002648689205053e-05,
+        "same_prompt_char5": 0.07037319493288521,
+        "unique_w2_ratio": 0.9601489757914339,
+        "unique_w3_ratio": 0.9844479004665629,
+        "avg_boilerplate": 0.37777777777777777,
+        "opening_diversity": 0.9734513274336283,
+        "structural_diversity": 0.4888888888888889,
+        "avg_length": 185.82962962962964,
+        "valid_count": 113,
+        "english_ratio": 0.03520312562293187
+      }
+    },
+    {
+      "tag": "qwen35_9b",
+      "label": "Qwen3.5-9B",
+      "n_axes": 5,
+      "stripped": {
+        "cross_char5_jaccard": 0.032828434187552866,
+        "cross_word2_jaccard": 0.013052000720397892,
+        "cross_word3_jaccard": 0.004398463547995721,
+        "cross_word2_cosine": 0.026990169733502108,
+        "same_prompt_char5": 0.1918256334295571,
+        "unique_w2_ratio": 0.6409528113097928,
+        "unique_w3_ratio": 0.8122669951697086,
+        "avg_boilerplate": 0.24444444444444444,
+        "opening_diversity": 0.21481481481481482,
+        "structural_diversity": 0.4074074074074074,
+        "avg_length": 1715.4518518518519,
+        "valid_count": 135,
+        "english_ratio": 0.6188413807397684
+      }
+    }
+  ]
+}

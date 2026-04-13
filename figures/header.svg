@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a0a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff4444;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff8800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffcc00;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="300" fill="url(#bg)" rx="12"/>
+  
+  <!-- Grid lines -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="60" x2="900" y2="60"/><line x1="0" y1="120" x2="900" y2="120"/>
+    <line x1="0" y1="180" x2="900" y2="180"/><line x1="0" y1="240" x2="900" y2="240"/>
+    <line x1="150" y1="0" x2="150" y2="300"/><line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="450" y1="0" x2="450" y2="300"/><line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="750" y1="0" x2="750" y2="300"/>
+  </g>
+
+  <!-- Particle scatter - representing manifold collapse -->
+  <!-- Diverse cloud (left) -->
+  <g opacity="0.6">
+    <circle cx="120" cy="100" r="3" fill="#4488ff"/><circle cx="145" cy="80" r="2.5" fill="#5599ff"/>
+    <circle cx="100" cy="130" r="2" fill="#6699ff"/><circle cx="160" cy="120" r="3.5" fill="#3377ee"/>
+    <circle cx="130" cy="150" r="2" fill="#77aaff"/><circle cx="175" cy="95" r="2.8" fill="#4488ff"/>
+    <circle cx="90" cy="110" r="2.2" fill="#88bbff"/><circle cx="155" cy="145" r="1.8" fill="#5599ff"/>
+    <circle cx="110" cy="85" r="3" fill="#4488ff"/><circle cx="140" cy="160" r="2.5" fill="#3377ee"/>
+    <circle cx="180" cy="130" r="2" fill="#6699ff"/><circle cx="105" cy="155" r="2.8" fill="#77aaff"/>
+    <circle cx="165" cy="75" r="2.2" fill="#5599ff"/><circle cx="125" cy="170" r="1.5" fill="#88bbff"/>
+    <circle cx="85" cy="140" r="2.5" fill="#4488ff"/><circle cx="195" cy="110" r="2" fill="#3377ee"/>
+    <circle cx="115" cy="70" r="3.2" fill="#6699ff"/><circle cx="150" cy="165" r="2" fill="#5599ff"/>
+  </g>
+  
+  <!-- Arrow -->
+  <g filter="url(#glow)">
+    <line x1="220" y1="125" x2="310" y2="125" stroke="url(#accent)" stroke-width="2.5" stroke-dasharray="6,4"/>
+    <polygon points="310,118 325,125 310,132" fill="#ff8800"/>
+  </g>
+
+  <!-- Collapsed cloud (right) -->
+  <g opacity="0.7">
+    <circle cx="380" cy="120" r="2" fill="#ff4444"/><circle cx="385" cy="125" r="2.5" fill="#ff5555"/>
+    <circle cx="375" cy="128" r="2" fill="#ff3333"/><circle cx="390" cy="118" r="3" fill="#ff4444"/>
+    <circle cx="382" cy="132" r="1.8" fill="#ff5555"/><circle cx="388" cy="122" r="2.2" fill="#ff3333"/>
+    <circle cx="378" cy="116" r="2.5" fill="#ff4444"/><circle cx="392" cy="130" r="2" fill="#ff5555"/>
+    <circle cx="384" cy="114" r="1.5" fill="#ff3333"/><circle cx="376" cy="124" r="2.8" fill="#ff4444"/>
+    <circle cx="386" cy="136" r="2" fill="#ff5555"/><circle cx="394" cy="126" r="1.8" fill="#ff3333"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="75" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="38" font-weight="800" fill="#ffffff" letter-spacing="-1">RL Drift</text>
+  <text x="450" y="120" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" fill="#aaaacc" letter-spacing="4">REPRESENTATION COLLAPSE IN RL-TRAINED LLMS</text>
+  
+  <!-- Separator -->
+  <rect x="300" y="140" width="300" height="2" fill="url(#accent)" rx="1" opacity="0.6"/>
+  
+  <!-- Subtitle -->
+  <text x="450" y="175" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#8888aa">
+    Empirical evidence that RL-for-agentic training systematically
+  </text>
+  <text x="450" y="195" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#8888aa">
+    compresses representation manifolds and kills output diversity
+  </text>
+
+  <!-- Stats badges -->
+  <g transform="translate(170,230)">
+    <rect x="0" y="0" width="110" height="32" rx="6" fill="#1a1a3a" stroke="#333366" stroke-width="1"/>
+    <text x="55" y="14" text-anchor="middle" font-family="monospace" font-size="10" fill="#ffcc00">9 Models</text>
+    <text x="55" y="26" text-anchor="middle" font-family="monospace" font-size="9" fill="#666688">1,215 Samples</text>
+  </g>
+  <g transform="translate(310,230)">
+    <rect x="0" y="0" width="110" height="32" rx="6" fill="#1a1a3a" stroke="#333366" stroke-width="1"/>
+    <text x="55" y="14" text-anchor="middle" font-family="monospace" font-size="10" fill="#ff8800">23 Metrics</text>
+    <text x="55" y="26" text-anchor="middle" font-family="monospace" font-size="9" fill="#666688">AutoDiscover</text>
+  </g>
+  <g transform="translate(450,230)">
+    <rect x="0" y="0" width="110" height="32" rx="6" fill="#1a1a3a" stroke="#333366" stroke-width="1"/>
+    <text x="55" y="14" text-anchor="middle" font-family="monospace" font-size="10" fill="#ff4444">270× Drift</text>
+    <text x="55" y="26" text-anchor="middle" font-family="monospace" font-size="9" fill="#666688">Qwen2.5’3.5</text>
+  </g>
+  <g transform="translate(590,230)">
+    <rect x="0" y="0" width="110" height="32" rx="6" fill="#1a1a3a" stroke="#333366" stroke-width="1"/>
+    <text x="55" y="14" text-anchor="middle" font-family="monospace" font-size="10" fill="#44ff88">Open Source</text>
+    <text x="55" y="26" text-anchor="middle" font-family="monospace" font-size="9" fill="#666688">Full Repro</text>
+  </g>
+</svg>

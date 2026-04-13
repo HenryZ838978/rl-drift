@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="380" viewBox="0 0 820 380">
+  <defs>
+    <linearGradient id="tbg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a14;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="820" height="380" fill="url(#tbg)" rx="10"/>
+  
+  <text x="410" y="30" text-anchor="middle" font-family="'Segoe UI',Helvetica,sans-serif" font-size="14" font-weight="700" fill="#ffffff">Cross-Model Template Score Comparison</text>
+  <text x="410" y="46" text-anchor="middle" font-family="monospace" font-size="10" fill="#666688">8 models · 135 samples each · CoT-stripped fair comparison</text>
+
+  <!-- Header -->
+  <rect x="15" y="58" width="790" height="28" rx="4" fill="#1a1a30"/>
+  <text x="105" y="77" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#8888aa">Model</text>
+  <text x="235" y="77" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#4488ff">Axes</text>
+  <text x="315" y="77" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#ff4444">X-Cosine</text>
+  <text x="405" y="77" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#ffaa00">Boilerplate</text>
+  <text x="500" y="77" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#44ddaa">Open Div</text>
+  <text x="590" y="77" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#aa88ff">Uniq W3</text>
+  <text x="700" y="77" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#ffffff">Verdict</text>
+
+  <!-- Data rows -->
+  <!-- Qwen2.5-7B: 16 axes, cosine=0.0001, bp=0.58, openD=0.962, unqW3=0.942 -->
+  <rect x="15" y="90" width="790" height="30" rx="0" fill="#0a1420" opacity="0.5"/>
+  <text x="105" y="110" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#ddddee">Qwen2.5-7B</text>
+  <rect x="215" y="97" width="40" height="16" rx="3" fill="#1a3a6a"/><text x="235" y="109" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#4488ff">16</text>
+  <text x="315" y="110" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.0001</text>
+  <text x="405" y="110" text-anchor="middle" font-family="monospace" font-size="11" fill="#bbbb88">0.58</text>
+  <text x="500" y="110" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.962</text>
+  <text x="590" y="110" text-anchor="middle" font-family="monospace" font-size="11" fill="#bbbbcc">0.942</text>
+  <rect x="650" y="97" width="100" height="18" rx="4" fill="#0a2a0a" stroke="#44aa44" stroke-width="0.5"/>
+  <text x="700" y="110" text-anchor="middle" font-family="monospace" font-size="10" fill="#44ff44">DIVERSE </text>
+
+  <!-- Qwen2-Audio: 13, 0.0001, 0.41, 0.916, 0.936 -->
+  <rect x="15" y="124" width="790" height="30" rx="0" fill="transparent"/>
+  <text x="105" y="144" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#ddddee">Qwen2-Audio</text>
+  <rect x="215" y="131" width="40" height="16" rx="3" fill="#1a3060"/><text x="235" y="143" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#4488ff">13</text>
+  <text x="315" y="144" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.0001</text>
+  <text x="405" y="144" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.41</text>
+  <text x="500" y="144" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.916</text>
+  <text x="590" y="144" text-anchor="middle" font-family="monospace" font-size="11" fill="#bbbbcc">0.936</text>
+  <rect x="650" y="131" width="100" height="18" rx="4" fill="#0a2a0a" stroke="#44aa44" stroke-width="0.5"/>
+  <text x="700" y="144" text-anchor="middle" font-family="monospace" font-size="10" fill="#44ff44">DIVERSE </text>
+
+  <!-- MiniCPM4.1: 9, 0.0057, 0.01, 1.000, 0.903 -->
+  <rect x="15" y="158" width="790" height="30" rx="0" fill="#0a1420" opacity="0.5"/>
+  <text x="105" y="178" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#ddddee">MiniCPM4.1</text>
+  <rect x="215" y="165" width="40" height="16" rx="3" fill="#1a2850"/><text x="235" y="177" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#6699dd">9</text>
+  <text x="315" y="178" text-anchor="middle" font-family="monospace" font-size="11" fill="#dddd44">0.0057</text>
+  <text x="405" y="178" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.01</text>
+  <text x="500" y="178" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">1.000</text>
+  <text x="590" y="178" text-anchor="middle" font-family="monospace" font-size="11" fill="#bbbbcc">0.903</text>
+  <rect x="650" y="165" width="100" height="18" rx="4" fill="#1a2a0a" stroke="#88aa44" stroke-width="0.5"/>
+  <text x="700" y="178" text-anchor="middle" font-family="monospace" font-size="10" fill="#aadd44">MODERATE</text>
+
+  <!-- Qwen3-8B: 9, 0.0001, 0.38, 0.974, 0.984 -->
+  <rect x="15" y="192" width="790" height="30" rx="0" fill="transparent"/>
+  <text x="105" y="212" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#ddddee">Qwen3-8B</text>
+  <rect x="215" y="199" width="40" height="16" rx="3" fill="#1a2850"/><text x="235" y="211" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#6699dd">9</text>
+  <text x="315" y="212" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.0001</text>
+  <text x="405" y="212" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.38</text>
+  <text x="500" y="212" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.974</text>
+  <text x="590" y="212" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.984</text>
+  <rect x="650" y="199" width="100" height="18" rx="4" fill="#0a2a0a" stroke="#44aa44" stroke-width="0.5"/>
+  <text x="700" y="212" text-anchor="middle" font-family="monospace" font-size="10" fill="#44ff44">DIVERSE </text>
+
+  <!-- Gemma4: 7, 0.0003, 0.39, 0.962, 0.938 -->
+  <rect x="15" y="226" width="790" height="30" rx="0" fill="#0a1420" opacity="0.5"/>
+  <text x="105" y="246" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#ddddee">Gemma4-E4B</text>
+  <rect x="215" y="233" width="40" height="16" rx="3" fill="#1a2040"/><text x="235" y="245" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#8899bb">7</text>
+  <text x="315" y="246" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.0003</text>
+  <text x="405" y="246" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.39</text>
+  <text x="500" y="246" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.962</text>
+  <text x="590" y="246" text-anchor="middle" font-family="monospace" font-size="11" fill="#bbbbcc">0.938</text>
+  <rect x="650" y="233" width="100" height="18" rx="4" fill="#0a2a0a" stroke="#44aa44" stroke-width="0.5"/>
+  <text x="700" y="246" text-anchor="middle" font-family="monospace" font-size="10" fill="#44ff44">DIVERSE </text>
+
+  <!-- Qwen3.5-9B: 5, 0.0270, 0.24, 0.215, 0.812  THE OUTLIER -->
+  <rect x="15" y="260" width="790" height="30" rx="0" fill="#1a0808" opacity="0.8"/>
+  <text x="105" y="280" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="700" fill="#ff8888">Qwen3.5-9B</text>
+  <rect x="215" y="267" width="40" height="16" rx="3" fill="#3a1a1a"/><text x="235" y="279" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#ff6644">5</text>
+  <text x="315" y="280" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#ff4444">0.0270</text>
+  <text x="405" y="280" text-anchor="middle" font-family="monospace" font-size="11" fill="#bbbb88">0.24</text>
+  <text x="500" y="280" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#ff4444">0.215</text>
+  <text x="590" y="280" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#ff8844">0.812</text>
+  <rect x="650" y="267" width="100" height="18" rx="4" fill="#3a0a0a" stroke="#ff4444" stroke-width="1"/>
+  <text x="700" y="280" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#ff4444">COLLAPSED </text>
+
+  <!-- DeepSeek-R1: 0*, 0.0030, 2.19, 0.941, 0.950 -->
+  <rect x="15" y="294" width="790" height="30" rx="0" fill="#0a1420" opacity="0.5"/>
+  <text x="105" y="314" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#aaaaaa">DeepSeek-R1</text>
+  <rect x="215" y="301" width="40" height="16" rx="3" fill="#1a1a20"/><text x="235" y="313" text-anchor="middle" font-family="monospace" font-size="11" fill="#888888">0*</text>
+  <text x="315" y="314" text-anchor="middle" font-family="monospace" font-size="11" fill="#dddd44">0.0030</text>
+  <text x="405" y="314" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#ff8844">2.19</text>
+  <text x="500" y="314" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.941</text>
+  <text x="590" y="314" text-anchor="middle" font-family="monospace" font-size="11" fill="#bbbbcc">0.950</text>
+  <rect x="650" y="301" width="100" height="18" rx="4" fill="#1a2a1a" stroke="#88aa44" stroke-width="0.5"/>
+  <text x="700" y="314" text-anchor="middle" font-family="monospace" font-size="10" fill="#aadd44">BOILERPLATE</text>
+
+  <!-- Qwen3-14B: 0*, 0.0002, 0.29, 0.991, 0.977 -->
+  <rect x="15" y="328" width="790" height="30" rx="0" fill="transparent"/>
+  <text x="105" y="348" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" fill="#aaaaaa">Qwen3-14B</text>
+  <rect x="215" y="335" width="40" height="16" rx="3" fill="#1a1a20"/><text x="235" y="347" text-anchor="middle" font-family="monospace" font-size="11" fill="#888888">0*</text>
+  <text x="315" y="348" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.0002</text>
+  <text x="405" y="348" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.29</text>
+  <text x="500" y="348" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.991</text>
+  <text x="590" y="348" text-anchor="middle" font-family="monospace" font-size="11" fill="#44ff88">0.977</text>
+  <rect x="650" y="335" width="100" height="18" rx="4" fill="#0a2a0a" stroke="#44aa44" stroke-width="0.5"/>
+  <text x="700" y="348" text-anchor="middle" font-family="monospace" font-size="10" fill="#44ff44">DIVERSE </text>
+
+  <text x="410" y="375" text-anchor="middle" font-family="monospace" font-size="9" fill="#444466">* 0 axes = threshold not met in AutoDiscover; does not imply zero behavioral variation</text>
+</svg>

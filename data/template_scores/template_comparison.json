@@ -1,0 +1,122 @@
+{
+  "models": [
+    {
+      "tag": "qwen25_7b",
+      "label": "Qwen2.5-7B-Instruct",
+      "n_axes": 16,
+      "total_variance": 0.46670000000000006,
+      "cross_char5": 0.0013030053995976016,
+      "cross_word2_cos": 7.840800098279882e-05,
+      "unique_w3": 0.9419795221843004,
+      "boilerplate": 0.5777777777777777,
+      "opening_div": 0.9481481481481482,
+      "struct_div": 0.2962962962962963,
+      "avg_len": 371.9259259259259
+    },
+    {
+      "tag": "qwen2_audio",
+      "label": "Qwen2-Audio-7B",
+      "n_axes": 13,
+      "total_variance": 0.39319999999999994,
+      "cross_char5": 0.00029111501366204447,
+      "cross_word2_cos": 8.924201909156527e-05,
+      "unique_w3": 0.93560751245688,
+      "boilerplate": 0.4148148148148148,
+      "opening_div": 0.9037037037037037,
+      "struct_div": 0.2074074074074074,
+      "avg_len": 195.74074074074073
+    },
+    {
+      "tag": "minicpm41",
+      "label": "MiniCPM4.1-8B",
+      "n_axes": 9,
+      "total_variance": 0.4213,
+      "cross_char5": 0.0002604791150654852,
+      "cross_word2_cos": 0.0009759371164097715,
+      "unique_w3": 0.9027993779160186,
+      "boilerplate": 0.014814814814814815,
+      "opening_div": 0.6074074074074074,
+      "struct_div": 0.07407407407407407,
+      "avg_len": 149.7925925925926
+    },
+    {
+      "tag": "qwen3_8b",
+      "label": "Qwen3-8B",
+      "n_axes": 9,
+      "total_variance": 0.25680000000000003,
+      "cross_char5": 0.012674824001742375,
+      "cross_word2_cos": 0.007021242967770666,
+      "unique_w3": 0.9553439500902972,
+      "boilerplate": 2.6666666666666665,
+      "opening_div": 0.007407407407407408,
+      "struct_div": 0.2,
+      "avg_len": 799.8518518518518
+    },
+    {
+      "tag": "gemma4",
+      "label": "Gemma4-E4B",
+      "n_axes": 7,
+      "total_variance": 0.2338,
+      "cross_char5": 0.0010525840487543498,
+      "cross_word2_cos": 0.0002904721629401634,
+      "unique_w3": 0.9380590339892666,
+      "boilerplate": 0.3851851851851852,
+      "opening_div": 0.9555555555555556,
+      "struct_div": 0.6370370370370371,
+      "avg_len": 581.7407407407408
+    },
+    {
+      "tag": "qwen35_9b",
+      "label": "Qwen3.5-9B",
+      "n_axes": 5,
+      "total_variance": 0.0623,
+      "cross_char5": 0.04182753202271789,
+      "cross_word2_cos": 0.044508966770487136,
+      "unique_w3": 0.7842984721660391,
+      "boilerplate": 0.24444444444444444,
+      "opening_div": 0.18518518518518517,
+      "struct_div": 0.37777777777777777,
+      "avg_len": 1772.3111111111111
+    },
+    {
+      "tag": "minicpm_sala",
+      "label": "MiniCPM-SALA",
+      "n_axes": 3,
+      "total_variance": 0.33140000000000003,
+      "cross_char5": 0.0,
+      "cross_word2_cos": 0.0,
+      "unique_w3": 0.0,
+      "boilerplate": 0.0,
+      "opening_div": 0.007407407407407408,
+      "struct_div": 0.007407407407407408,
+      "avg_len": 0.0
+    },
+    {
+      "tag": "qwen3_14b",
+      "label": "Qwen3-14B-AWQ",
+      "n_axes": 0,
+      "total_variance": 0,
+      "cross_char5": 0.012271967642320762,
+      "cross_word2_cos": 0.007492595493659144,
+      "unique_w3": 0.9508909897096963,
+      "boilerplate": 2.466666666666667,
+      "opening_div": 0.007407407407407408,
+      "struct_div": 0.2518518518518518,
+      "avg_len": 783.6370370370371
+    },
+    {
+      "tag": "deepseek_r1",
+      "label": "DeepSeek-R1-14B",
+      "n_axes": 0,
+      "total_variance": 0,
+      "cross_char5": 0.007685894511931377,
+      "cross_word2_cos": 0.003021027549362931,
+      "unique_w3": 0.9496090356211989,
+      "boilerplate": 2.185185185185185,
+      "opening_div": 0.9407407407407408,
+      "struct_div": 0.3111111111111111,
+      "avg_len": 689.4888888888889
+    }
+  ],
+  "timestamp": "2026-04-13 06:05:04"
+}

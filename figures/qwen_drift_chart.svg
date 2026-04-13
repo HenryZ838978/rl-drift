@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <defs>
+    <linearGradient id="cbg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#12091e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="420" fill="url(#cbg)" rx="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="'Segoe UI',Helvetica,sans-serif" font-size="16" font-weight="700" fill="#ffffff">Qwen Lineage: Control Axes ì  í  Template Overlap ë  í  Diversity Collapse</text>
+  <text x="400" y="52" text-anchor="middle" font-family="'Segoe UI',Helvetica,sans-serif" font-size="11" fill="#666688">Same architecture family ∑ Controlled comparison ∑ Only variable = RL intensity</text>
+
+  <!-- Chart area: 80,70 to 720,340 -->
+  <!-- Y axis (left): Control Axes -->
+  <text x="30" y="205" text-anchor="middle" font-family="monospace" font-size="11" fill="#4488ff" transform="rotate(-90,30,205)">Control Axes (n)</text>
+  <line x1="80" y1="70" x2="80" y2="340" stroke="#333355" stroke-width="1"/>
+  <!-- Y ticks -->
+  <text x="70" y="340" text-anchor="end" font-family="monospace" font-size="10" fill="#4488ff">0</text>
+  <text x="70" y="272" text-anchor="end" font-family="monospace" font-size="10" fill="#4488ff">5</text>
+  <text x="70" y="205" text-anchor="end" font-family="monospace" font-size="10" fill="#4488ff">10</text>
+  <text x="70" y="138" text-anchor="end" font-family="monospace" font-size="10" fill="#4488ff">15</text>
+  <text x="70" y="70" text-anchor="end" font-family="monospace" font-size="10" fill="#4488ff">20</text>
+  <!-- Grid -->
+  <g stroke="#222244" stroke-width="0.5" stroke-dasharray="3,3">
+    <line x1="80" y1="272" x2="720" y2="272"/><line x1="80" y1="205" x2="720" y2="205"/>
+    <line x1="80" y1="138" x2="720" y2="138"/><line x1="80" y1="70" x2="720" y2="70"/>
+  </g>
+
+  <!-- X axis labels -->
+  <text x="200" y="365" text-anchor="middle" font-family="'Segoe UI',Helvetica,sans-serif" font-size="13" font-weight="600" fill="#ddddee">Qwen2.5-7B</text>
+  <text x="200" y="380" text-anchor="middle" font-family="monospace" font-size="10" fill="#555577">2024 ∑ SFT only</text>
+  <text x="400" y="365" text-anchor="middle" font-family="'Segoe UI',Helvetica,sans-serif" font-size="13" font-weight="600" fill="#ddddee">Qwen3-8B</text>
+  <text x="400" y="380" text-anchor="middle" font-family="monospace" font-size="10" fill="#555577">2025-Q1 ∑ RL</text>
+  <text x="600" y="365" text-anchor="middle" font-family="'Segoe UI',Helvetica,sans-serif" font-size="13" font-weight="600" fill="#ddddee">Qwen3.5-9B</text>
+  <text x="600" y="380" text-anchor="middle" font-family="monospace" font-size="10" fill="#555577">2025-Q2 ∑ Heavy RL</text>
+
+  <!-- Axes bars (blue)  16, 9, 5 í scaled: 16/20*270=216, 9/20*270=121.5, 5/20*270=67.5 -->
+  <rect x="170" y="124" width="60" height="216" rx="4" fill="#4488ff" opacity="0.85"/>
+  <text x="200" y="118" text-anchor="middle" font-family="monospace" font-size="14" font-weight="700" fill="#4488ff">16</text>
+  
+  <rect x="370" y="218.5" width="60" height="121.5" rx="4" fill="#4488ff" opacity="0.65"/>
+  <text x="400" y="212" text-anchor="middle" font-family="monospace" font-size="14" font-weight="700" fill="#4488ff">9</text>
+  
+  <rect x="570" y="272.5" width="60" height="67.5" rx="4" fill="#4488ff" opacity="0.45"/>
+  <text x="600" y="266" text-anchor="middle" font-family="monospace" font-size="14" font-weight="700" fill="#4488ff">5</text>
+
+  <!-- Y axis (right): Cross-prompt cosine similarity (◊10000) -->
+  <text x="775" y="205" text-anchor="middle" font-family="monospace" font-size="11" fill="#ff4444" transform="rotate(90,775,205)">Cross-prompt Cosine (◊10t)</text>
+  <line x1="720" y1="70" x2="720" y2="340" stroke="#333355" stroke-width="1"/>
+  <!-- Scale: 0 to 300 (0.0000 to 0.0300) -->
+  <text x="730" y="340" text-anchor="start" font-family="monospace" font-size="10" fill="#ff4444">0</text>
+  <text x="730" y="250" text-anchor="start" font-family="monospace" font-size="10" fill="#ff4444">100</text>
+  <text x="730" y="160" text-anchor="start" font-family="monospace" font-size="10" fill="#ff4444">200</text>
+  <text x="730" y="70" text-anchor="start" font-family="monospace" font-size="10" fill="#ff4444">300</text>
+
+  <!-- Cosine line (red)  values: 1, 1, 270 í scaled -->
+  <!-- 1/300*270=0.9 í y=339.1; 270/300*270=243 í y=97 -->
+  <polyline points="200,339 400,339 600,97" fill="none" stroke="#ff4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="200" cy="339" r="6" fill="#ff4444" stroke="#0d0d1a" stroke-width="2"/>
+  <circle cx="400" cy="339" r="6" fill="#ff4444" stroke="#0d0d1a" stroke-width="2"/>
+  <circle cx="600" cy="97" r="8" fill="#ff4444" stroke="#ff6666" stroke-width="2"/>
+  
+  <!-- Annotations -->
+  <text x="200" y="333" text-anchor="middle" font-family="monospace" font-size="10" fill="#ff6666">1</text>
+  <text x="400" y="333" text-anchor="middle" font-family="monospace" font-size="10" fill="#ff6666">1</text>
+  <text x="600" y="90" text-anchor="middle" font-family="monospace" font-size="13" font-weight="700" fill="#ff4444">270</text>
+  
+  <!-- 270x annotation -->
+  <text x="620" y="80" text-anchor="start" font-family="'Segoe UI',Helvetica,sans-serif" font-size="12" font-weight="700" fill="#ff8800">ê 270◊ increase!</text>
+
+  <!-- Legend -->
+  <g transform="translate(100, 395)">
+    <rect x="0" y="0" width="12" height="12" rx="2" fill="#4488ff"/>
+    <text x="18" y="11" font-family="monospace" font-size="10" fill="#8888aa">Control Axes (left)</text>
+    <rect x="180" y="0" width="12" height="12" rx="2" fill="#ff4444"/>
+    <text x="198" y="11" font-family="monospace" font-size="10" fill="#8888aa">Cross-prompt Cosine ◊10t (right)</text>
+  </g>
+</svg>
