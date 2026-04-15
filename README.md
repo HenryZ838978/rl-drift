@@ -231,6 +231,23 @@ Requirements: `torch`, `transformers`, `numpy`, `scipy`, `sklearn`
 
 ---
 
+## Citation
+
+```bibtex
+@software{rldrift2026,
+  title  = {RL Drift: Empirical evidence that RL-for-agentic training
+            systematically compresses representation manifolds in LLMs},
+  author = {Zhang, Jing},
+  url    = {https://github.com/HenryZ838978/rl-drift},
+  year   = {2026}
+}
+```
+
+> **📄 This work is part of a larger research program.** See the full theory paper:
+> [The Representational Budget: Scale, RL, and Multimodal Alignment Compete for Geometric Potential in Transformers](https://doi.org/10.5281/zenodo.19585083) (DOI: `10.5281/zenodo.19585083`)
+
+---
+
 <p align="center">
   <sub>Built with <a href="https://github.com/huggingface/transformers">🤗 Transformers</a> · <a href="https://threejs.org/">Three.js</a> · Frustration at increasingly robotic LLMs</sub>
 </p>
